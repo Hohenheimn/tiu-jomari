@@ -1,0 +1,7 @@
+.projects{ width: 100%; overflow: hidden; background-color: black; padding: 20px 0;}
+.projects .max h5{color: #dd0000; font-size: 16px; margin-bottom: 5px;}
+.projects .max h1{color: white; font-family: 'Raleway-bold'; font-size: 32px; position: relative; display: inline-block; padding-bottom: 10px;}
+.projects .max h1::after{content: ''; position: absolute; left: 0; bottom: 0; height: 2px; width: 40%; background-color: #dd0000;}
+
+.projects .max .h3{display: inline-block; cursor: pointer; font-size: 18px; letter-spacing: 2px; transition: .3s ease; color: #dd0000; text-decoration: none; text-transform: uppercase; font-family: 'Raleway-regular';}
+.projects .max .h3:hover{color: #bc4141;}

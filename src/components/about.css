@@ -1,0 +1,44 @@
+.about-container{position: relative; width: 100%; overflow: hidden; background-color: white;}
+.bg-animation{position: absolute; animation: animationBg 5s infinite; top: 0; left: 0; width: 200%; height: 200%; z-index: 0;}
+svg{z-index: 9; position: relative;}
+.svg-bot{margin-bottom: -5px;}
+.max.max-about{position: relative; z-index: 9;}
+.boxes{position: absolute;}
+.boxes:nth-child(1){width: 40%; aspect-ratio: 2/1; background-color: black; z-index: 0; top: 0%; left: 0;}
+h1{font-size: clamp(24px, 3vw, 64px); position: relative; color: rgba(85, 85, 85, 0.56); text-transform: uppercase; font-weight: bold; z-index: 1;}
+.about{width: 100%; position: relative; display: flex; justify-content: space-between; margin: clamp(50px, 3vw, 100px) 0; z-index: 9;}
+
+.about article{width: 47%; display: flex; justify-content: center; flex-direction: column; align-items: center;}
+.about article div{ background-color: black; box-shadow: 10px 10px 15px 0 rgba(147, 147, 147, 0.301); padding: 40px;}
+.about article h5{margin-bottom: 5px; color: #dd0000; font-size: 16px;}
+.about article h2{display: inline-block; font-size: 32px; color: white; padding-bottom: 10px; margin-bottom: 20px; position: relative;}
+.about article h2::after{content: ''; position: absolute; width: 40%; bottom: 0; left: 0; height: 2px; background-color: #dd0000;}
+.about article h3{font-size: clamp(18px, 2vw, 24px); color: #dd0000; text-transform: uppercase; font-family: 'Raleway-bold'; font-weight: bold; margin-bottom: 10px;}
+.about article ul{list-style: none; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.about article ul li{ width: 48%; font-family:'Raleway-regular'; color: #b1b3b7; font-size: 16px; margin-bottom: 10px;}
+.about article div p{ width: 100%; color: #b1b3b7; margin: auto; font-family: 'Raleway-regular'; margin-bottom: 20px; line-height: 150%;}
+.about article a{display: inline-block; font-size: 14px; transition: .3s ease; padding: 10px 20px; margin-top: 20px; background-color: #dd0000; color: white; text-decoration: none; font-family: 'Raleway-bold';}
+.about article a:hover{background-color: #bc4141;}
+
+.about aside{width: 48%; display: flex; justify-content: center; align-items: center;}
+.about aside div{width: 70%;}
+.about aside div img{width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%;}
+
+@media(max-width: 768px){
+    .about aside div {width: 100%; display: flex; align-items: center; flex-direction: column;}
+    .about aside div img{width: 100%; margin: auto;}
+}
+@media(max-width: 640px){
+    .about{flex-direction: column;}
+    .about article{width: 100%; order: 2;  margin-top: 20px;}
+    .about aside{width: 100%; order: 1;}
+    .about article div{width: 90%;}
+    .about article ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
+    .about article ul li{width: 48%;}
+}
+@media(max-width: 420px){
+    .about article ul li{width: 100%;}
+    .about aside div {width: 80%;}
+    .about aside div img{width: 80%; }
+    .about article div{padding: 20px; width: 100%;}
+}

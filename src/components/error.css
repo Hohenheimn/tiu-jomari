@@ -1,0 +1,5 @@
+.error .max{display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: clamp(50px, 4vw, 100px);}
+.error .max img{width: 70%; max-width: 300px; height: auto; margin-bottom: 50px;}
+.error .max h3{font-size: clamp(24px, 4vw, 64px); color: #dd0000; margin-bottom: 20px; text-transform: capitalize !important;}
+.error .max a{display: inline-block; transition: .5s ease; font-family: 'Raleway-bold'; text-decoration: none; padding: 20px 40px; border-radius: 5px; color: white; background-color: black;}
+.error .max a:hover{background-color: white; color: #dd0000; box-shadow: 10px 10px 15px 0 rgb(142, 142, 142);}

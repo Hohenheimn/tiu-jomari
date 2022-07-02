@@ -1,0 +1,188 @@
+.max {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  nav {
+    width: 100%;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  nav .max {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  nav .max aside h1 {
+    font-family: "Raleway-light", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: black;
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+    -webkit-animation: logoRotate 1s ease-in-out;
+            animation: logoRotate 1s ease-in-out;
+  }
+  
+  nav .max ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav .max ul li {
+    margin-left: 10px;
+    border-left: 1px solid black;
+  }
+  
+  nav .max ul li a {
+    text-decoration: none;
+    font-family: "Raleway-regular", sans-serif;
+    padding: 10px 12px;
+    display: inline-block;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    color: #273036;
+    font-size: 10px;
+  }
+  
+  nav .max ul li a:hover {
+    -webkit-box-shadow: inset 120px 0px 0px 0px black;
+            box-shadow: inset 120px 0px 0px 0px black;
+    color: white;
+    font-family: "Raleway-bold", sans-serif;
+  }
+  
+  nav .max ul li a.active {
+    -webkit-box-shadow: inset 120px 0px 0px 0px black;
+            box-shadow: inset 120px 0px 0px 0px black;
+    color: white;
+    font-family: "Raleway-bold", sans-serif;
+  }
+  
+  nav .max .menu {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    position: relative;
+    cursor: pointer;
+    display: none;
+  }
+  
+  nav .max .menu::before {
+    content: '';
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    left: 20%;
+    top: 25%;
+    background-color: white;
+  }
+  
+  nav .max .menu::after {
+    content: '';
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    left: 20%;
+    bottom: 25%;
+    background-color: white;
+  }
+  
+  nav .max .menu div {
+    position: absolute;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    height: 2px;
+    width: 60%;
+    left: 20%;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    bottom: 50%;
+    background-color: white;
+  }
+  
+  nav .max .menu.active{background-color: #dd0000;}
+
+  nav .max .menu.active::before {
+    -webkit-transform: rotate(38deg);
+            transform: rotate(38deg);
+    width: 75%;
+  }
+  
+  nav .max .menu.active::after {
+    -webkit-transform: rotate(-38deg);
+            transform: rotate(-38deg);
+    width: 75%;
+  }
+  
+  nav .max .menu.active div {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  
+  nav.scroll {
+    background-color: black;
+  }
+  
+  nav.scroll .max aside h1 {
+    color: white;
+  }
+  
+  nav.scroll ul li {
+    border-left: 1px solid white;
+  }
+  
+  nav.scroll ul li a {
+    color: white;
+  }
+  
+  nav.scroll ul li a:hover {
+    -webkit-box-shadow: inset 120px 0px 0px 0px white;
+            box-shadow: inset 120px 0px 0px 0px white;
+    color: #273036;
+  }
+  
+  nav.scroll ul li a.active {
+    -webkit-box-shadow: inset 120px 0px 0px 0px white;
+            box-shadow: inset 120px 0px 0px 0px white;
+    color: #273036;
+  }
+  
+  .burger-menu {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border: 1px solid black;
+  }
+
+  nav.activeScroll{background-color: white; box-shadow: 0 0 15px rgb(177, 177, 177); z-index: 999;}

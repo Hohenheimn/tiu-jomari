@@ -1,0 +1,78 @@
+/* desktop */
+@media screen and (max-width: 1920px) {	
+}
+@media screen and (max-width: 1599px) {	
+}
+@media screen and (max-width: 1440px) {
+    nav .max aside h1{font-size: 24px;}
+    nav .max ul li a{font-size: 12px;}
+    header .text-container h1{font-size: 48px;}
+    header .text-container p{font-size: 24px;}
+    .card-container .card .content .title{font-size: 16px;}
+}
+@media screen and (max-width: 1366px) {
+}
+@media screen and (max-width: 1280px) {
+}
+/* End of Desktop */
+
+/* Ipad LandScape */
+@media screen and (max-width: 1080px){
+    .card-container{flex-wrap: wrap;}
+    .card-container .card{width: 32%; margin-bottom: 20px;}
+}
+
+/* Ipad Mini Portrait */
+@media only screen and (max-width: 800px) {
+    header .text-container{top: 45%; transform: translateY(-50%) translateX(-50%);}
+    header .text-container h1{font-size: 32px;}
+    .card-container .card{width: 49%;}
+}
+
+
+@media only screen and (max-width: 640px) {
+    header .text-container h1{font-size: 34px;}
+    header .text-container h3{font-size: 20px; line-height: 250%;}
+    nav .max{position: static;}
+    nav{ z-index: 9999;}
+    nav .max ul{ position: fixed; transition: .3s ease-in-out; top: 0; height: 0; overflow: hidden; transform-origin: top center; width: 100%; right: 0; background-color: white; justify-content: center; align-items: center; flex-direction: column;}
+    nav .max ul.active{height: 100vh;}
+    nav .max ul li{border: none; margin: 0; margin-bottom: 20px;}
+    nav .max .menu{display: block;}
+
+    nav .max ul li{transform: translateY(-50px); transition-delay: .3s; opacity: 0; transition: .3s cubic-bezier(0.25, 0.1, 0.7, 1.35);}
+    nav .max ul li:nth-child(2){transition-delay: .6s;}
+    nav .max ul li:nth-child(3){transition-delay: .9s;}
+    nav .max ul li:nth-child(4){transition-delay: 1.2s;}
+
+    nav .max ul.active li{transform: translateY(0); opacity: 1;}
+    .card-container{align-items: center; justify-content: center;}
+    .card-container .card{width: 80%;}
+}
+
+@media only screen and (max-width: 480px) {
+    header .text-container h1{font-size: 24px;}	
+    header .text-container .dl-cv{padding: 10px 15px; font-size: 12px;}
+    .card-container .card{width: 100%;}
+    header .text-container h1.desktop{display: none;}
+    header .text-container h1.mobile{display: inline;}
+    header .text-container h1.first{margin-bottom: 0;}
+    header .text-container h1.second{margin-top: 5px;}
+    header .text-container h1.second::after{animation-delay: 2.5s;}
+}
+
+
+/* Iphone 12 Pro */
+@media only screen and (max-width: 390px) {
+}
+
+/* Iphone 6/7/8 */
+@media only screen and (max-width: 375px) {
+}
+
+/* Iphone 5 */
+@media only screen and (max-width: 320px) {
+}
+
+
+
