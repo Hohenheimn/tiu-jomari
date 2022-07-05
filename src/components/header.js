@@ -5,7 +5,6 @@ export default function Header({timeLine}) {
     
     useEffect(() => {
         timeLine.fromTo('.text1', 1, {transform: 'translateY(50px)', opacity: 0}, {transform: 'translateY(0)', opacity: 1, ease: 'Power4.easeIn'})
-        timeLine.fromTo('.text2', 1, {transform: 'translateY(50px)', opacity: 0}, {transform: 'translateY(0)', opacity: 1, ease: 'Power4.easeIn'}, '-=.5')
         timeLine.fromTo('.dl-cv', 1, {transform: 'translateY(50px)', opacity: 0}, {transform: 'translateY(0)', opacity: 1, ease: 'Power4.easeIn'}, '-=.5')
     },[]);
 

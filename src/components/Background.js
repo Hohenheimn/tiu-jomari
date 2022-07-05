@@ -17,16 +17,16 @@ export default function Background({timeLine}) {
         const div9 = document.querySelector('.div9');
         const div10 = document.querySelector('.div10');
         timeLine.fromTo(logo, 1, {transform: 'translateX(-200px)', opacity: 0}, {transform: 'translateX(0)', opacity: 1})
-        timeLine.fromTo(div1, .5, {width: '100%'}, {width: 0})
-        timeLine.fromTo(div2, .5, {width: '100%'}, {width: 0})
-        timeLine.fromTo(div3, .5, {width: '100%'}, {width: 0})
-        timeLine.fromTo(div4, .5, {width: '100%'}, {width: 0})
-        timeLine.to(logo, 1.5, {transform: 'translateX(-200px)', opacity: 0, ease: 'Bounce.easeInOut' })
-        timeLine.fromTo(div5, .5, {width: '100%'}, {width: 0})
-        timeLine.fromTo(div6, .5, {width: '100%'}, {width: 0})
-        timeLine.fromTo(div7, .5, {width: '100%'}, {width: 0})
-        timeLine.fromTo(div8, .5, {width: '100%'}, {width: 0})
-        timeLine.fromTo(div9, .5, {width: '100%'}, {width: 0})
+        timeLine.fromTo(div1, .3, {width: '100%'}, {width: 0})
+        timeLine.fromTo(div2, .3, {width: '100%'}, {width: 0})
+        timeLine.fromTo(div3, .3, {width: '100%'}, {width: 0})
+        timeLine.fromTo(div4, .3, {width: '100%'}, {width: 0})
+        timeLine.to(logo, 1, {transform: 'translateX(-200px)', opacity: 0, ease: 'Bounce.easeInOut' }, '-=1')
+        timeLine.fromTo(div5, .3, {width: '100%'}, {width: 0})
+        timeLine.fromTo(div6, .3, {width: '100%'}, {width: 0})
+        timeLine.fromTo(div7, .3, {width: '100%'}, {width: 0})
+        timeLine.fromTo(div8, .3, {width: '100%'}, {width: 0})
+        timeLine.fromTo(div9, .3, {width: '100%'}, {width: 0})
         timeLine.to(background, .1, {display: 'none'})
 
     }, []);

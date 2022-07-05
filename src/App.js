@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import Homepage from "./components/homepage";
 import Navigation from "./components/navigation";
 import ProjectPage from "./components/ProjectPage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Contact from "./components/contact";
 import ErrorPage from "./components/errorPage";
 
@@ -29,7 +29,7 @@ function App() {
   
   return (
 
-    <BrowserRouter>
+    <HashRouter>
 
       <div className="App">
 
@@ -51,7 +51,7 @@ function App() {
 
       </div>
       
-    </BrowserRouter>
+    </HashRouter>
 
   );
 }

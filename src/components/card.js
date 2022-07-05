@@ -8,7 +8,7 @@ export default function Card({projectsArray}) {
         {projectsArray.map((projectList) => (
             <li className='card' key={projectList.id} data-aos="fade-left">
 
-                <img src={`/images/${projectList.ImageName}`} alt="" />
+                <img src={`/tiu-jomari/images/${projectList.ImageName}`} alt="" />
 
                 <div className='content'>
 
