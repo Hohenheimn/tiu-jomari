@@ -1,5 +1,7 @@
 import React from 'react'
 import './contact.css'
+import { FaFacebook, FaEnvelope, FaPhone, FaLinkedin } from 'react-icons/fa'
+
 
 export default function Contact() {
   return (
@@ -14,10 +16,10 @@ export default function Contact() {
 
             <ul>
               <h3 data-aos="fade-right">{'<Contact/>'}</h3>
-              <li data-aos="fade-right"><a href="https://www.facebook.com/jomari.tiu/" target="_black"><i class="fab fa-facebook"></i> Tiu Jmri</a></li>
-              <li data-aos="fade-right"><a href="jomtiu16@gmail.com" target="_black"><i class="fas fa-envelope"></i> jomtiu16@gmail.com</a></li>
-              <li data-aos="fade-right"><a target="_black"><i class="fas fa-phone-alt"></i> 09515532773</a></li>
-              <li data-aos="fade-right"><a href="https://linkedin.com/in/jomari-tiu-103b01214" target="_black"><i class="fab fa-linkedin-in"></i> jomari-tiu</a></li>
+              <li data-aos="fade-right"><a href="https://www.facebook.com/jomari.tiu/" target="_black"><FaFacebook/> Tiu Jmri</a></li>
+              <li data-aos="fade-right"><a href="jomtiu16@gmail.com" target="_black"><FaEnvelope/> jomtiu16@gmail.com</a></li>
+              <li data-aos="fade-right"><a target="_black"><FaPhone/> 09515532773</a></li>
+              <li data-aos="fade-right"><a href="https://linkedin.com/in/jomari-tiu-103b01214" target="_black"><FaLinkedin/> jomari-tiu</a></li>
             </ul>
 
             <aside>

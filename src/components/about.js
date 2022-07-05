@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.css'
+import { FaArrowDown } from 'react-icons/fa'
 
 export default function Aboutt() {
   return (
@@ -28,7 +29,7 @@ export default function Aboutt() {
                             <li data-aos="fade-left" data-aos-delay="200">PHP</li>
                             <li data-aos="fade-left" data-aos-delay="200">My SQL</li>
                         </ul>
-                        <a href="">Download CV <i class="fas fa-download"></i></a>
+                        <a href="/tiu-jomari/cv/Tiu-Jomari.docx">Download CV <FaArrowDown /></a>
                     </div>
                 </article>
                 <aside>
