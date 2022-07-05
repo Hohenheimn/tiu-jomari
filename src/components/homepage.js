@@ -4,7 +4,6 @@ import Navigation from "./navigation";
 import Projects from "./projects";
 import Background from "./Background";
 import Aboutt from "./about";
-import Contact from "./contact";
 import {gsap} from 'gsap';
 
 export default function Homepage() {
