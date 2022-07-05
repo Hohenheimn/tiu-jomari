@@ -33,7 +33,7 @@ export default function Aboutt() {
                 </article>
                 <aside>
                     <div>
-                        <img src="tiu-jomari/images/me.png" alt="" data-aos="zoom-in" />
+                        <img src="/tiu-jomari/images/Me.png" alt="" data-aos="zoom-in" />
                     </div>
                 </aside>
             </section>
