@@ -10,7 +10,7 @@ export default function ProjectPage() {
         Description: 'Project from THE ECONOMIST',
         DemoLink: 'https://hohenheimn.github.io/HKISD/',
         CodeLink: 'https://github.com/Hohenheimn/HKISD',
-        ImageName: 'hkisd.jpg'
+        ImageName: 'hkisd.png'
       },
       {
         id: 2,
@@ -18,7 +18,7 @@ export default function ProjectPage() {
         Description: 'Project from THE ECONOMIST',
         DemoLink: 'https://hohenheimn.github.io/Bounce/',
         CodeLink: 'https://github.com/Hohenheimn/Bounce',
-        ImageName: 'bounce.jpg'
+        ImageName: 'bounce.png'
       },
       {
         id: 3,
@@ -26,7 +26,7 @@ export default function ProjectPage() {
         Description: 'Project from THE ECONOMIST',
         DemoLink: ' https://hohenheimn.github.io/Four-Templates/',
         CodeLink: 'https://github.com/Hohenheimn/Four-Templates',
-        ImageName: 'google4.jpg'
+        ImageName: 'google4.png'
       },
       {
         id: 4,
@@ -42,7 +42,7 @@ export default function ProjectPage() {
         Description: 'Project from The Economist',
         DemoLink: 'https://hohenheimn.github.io/Kyndryl-Project/',
         CodeLink: 'https://github.com/Hohenheimn/kyndryl',
-        ImageName: 'kyndryl.jpg'
+        ImageName: 'kyndryl.png'
       },
       {
         id: 6,
@@ -50,7 +50,7 @@ export default function ProjectPage() {
         Description: 'Project from OPTIMIND',
         DemoLink: 'https://hohenheimn.github.io/STRIDE/',
         CodeLink: 'https://github.com/Hohenheimn/STRIDE',
-        ImageName: 'stride.jpg'
+        ImageName: 'stride.png'
       },
       {
         id: 7,
@@ -82,7 +82,7 @@ export default function ProjectPage() {
         Description: 'Project from The Economist',
         DemoLink: 'https://hohenheimn.github.io/mars-wrigley/',
         CodeLink: 'https://github.com/Hohenheimn/mars-wrigley',
-        ImageName: 'Mars.jpg'
+        ImageName: 'Mars.png'
       },
       {
         id: 11,
@@ -90,7 +90,7 @@ export default function ProjectPage() {
         Description: 'Project from The Economist',
         DemoLink: 'https://hohenheimn.github.io/Crypto/',
         CodeLink: 'https://github.com/Hohenheimn/Crypto',
-        ImageName: 'Crypto.jpg'
+        ImageName: 'Crypto.png'
       },
       {
         id: 12,
@@ -98,7 +98,7 @@ export default function ProjectPage() {
         Description: 'Project from Optimind',
         DemoLink: 'https://hohenheimn.github.io/IPC/',
         CodeLink: 'https://github.com/Hohenheimn/IPC',
-        ImageName: 'ipc.jpg'
+        ImageName: 'ipc.png'
       },
   ]
   return (

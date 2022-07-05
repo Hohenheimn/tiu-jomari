@@ -17,7 +17,7 @@ export default function Homepage() {
           Description: 'Project from THE ECONOMIST',
           DemoLink: 'https://hohenheimn.github.io/HKISD/',
           CodeLink: 'https://github.com/Hohenheimn/HKISD',
-          ImageName: 'hkisd.jpg'
+          ImageName: 'hkisd.png'
         },
         {
           id: 2,
@@ -25,7 +25,7 @@ export default function Homepage() {
           Description: 'Project from THE ECONOMIST',
           DemoLink: 'https://hohenheimn.github.io/Bounce/',
           CodeLink: 'https://github.com/Hohenheimn/Bounce',
-          ImageName: 'bounce.jpg'
+          ImageName: 'bounce.png'
         },
         {
           id: 3,
@@ -33,7 +33,7 @@ export default function Homepage() {
           Description: 'Project from THE ECONOMIST',
           DemoLink: ' https://hohenheimn.github.io/Four-Templates/',
           CodeLink: 'https://github.com/Hohenheimn/Four-Templates',
-          ImageName: 'google4.jpg'
+          ImageName: 'google4.png'
         },
         {
           id: 4,
