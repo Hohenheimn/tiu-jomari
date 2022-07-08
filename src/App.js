@@ -5,11 +5,13 @@ import ProjectPage from "./components/ProjectPage";
 import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Contact from "./components/contact";
 import ErrorPage from "./components/errorPage";
+import {AnimatePresence} from 'framer-motion'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import './responsive.css'
 import {gsap} from 'gsap';
+
 
 function App() {
 
@@ -18,14 +20,24 @@ function App() {
   const [navigationScroll, setNavigationScroll] = useState(false);
 
   useEffect (() => {
+
     window.addEventListener('scroll', () => {
+
       window.scrollY > 0 ? setNavigationScroll(true) : setNavigationScroll(false)
+
     })
+
     Aos.init({
+
       duration:500,
+
       once: true
+
     })
+    
   }, []);
+
+
   
   return (
 
@@ -37,13 +49,19 @@ function App() {
 
           <Navigation navScroll = {navigationScroll} timeLine={tl}></Navigation>
 
-          <Routes>
+          <AnimatePresence exitBeforeEnter={true}>
 
-            <Route path="/" element={<Homepage/>}/>
-            <Route path="/projects-page" element={<ProjectPage/>}/>
-            <Route path="*" element={<ErrorPage/>}/>
+            <Routes>
 
-          </Routes>
+              <Route path="/" element={<Homepage/>}/>
+
+              <Route path="/projects-page" element={<ProjectPage/>}/>
+              
+              <Route path="*" element={<ErrorPage/>}/>
+
+            </Routes>
+
+          </AnimatePresence>
 
           <Contact></Contact>
 

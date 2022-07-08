@@ -2,7 +2,7 @@
 .card-container .card{width: 24%; margin-bottom: 20px; border-radius: 10px; background-color: #fff; display: flex; justify-content: center; align-items: center; aspect-ratio: 1 / 1.7; position: relative; overflow: hidden; transition: .5s ease;}
 .card-container .card:nth-child(even){background-color: rgb(238, 237, 237);}
 .card-container .card img{width: 85%; border-radius: 10px; transition: .5s ease; transition-delay: .5s; box-shadow: 10px 15px 15px 0 rgba(85, 85, 85, 0.863); height: 80%; object-fit: cover; object-position: top;}
-.card-container .card:nth-child(even) img{box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.863);}
+.card-container .card:nth-child(even) img{box-shadow: 10px 15px 15px 0 rgba(146, 146, 146, 0.863);}
 .card-container .card .content{
     position: absolute; bottom: -110px; transition: .5s ease; transition-delay: .5s; background-image: linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.475), rgba(0, 0, 0, 0.651)); width: 100%; padding: 10px; padding-top: 20px;
 }

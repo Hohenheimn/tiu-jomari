@@ -1,8 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './ProjectPage.css'
 import Card from './card'
+import AnimatePage from './AnimatePage'
+import Background from './Background'
+import {gsap} from 'gsap';
 
 export default function ProjectPage() {
+
+    useEffect(() => {
+      window.scrollTo({ top: 0 })
+    }, [])
+
+    var tl = gsap.timeline();
+
     const projectsArray = [
       {
         id: 1,
@@ -103,6 +113,7 @@ export default function ProjectPage() {
   ]
   return (
     <div className='projects-container max'>
+      <Background timeLine = {tl} title="PROJECTS"></Background>
       <h5>Featured</h5>
       <h1>Projects</h1>
       <Card projectsArray ={projectsArray}></Card>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from "./header";
-import Navigation from "./navigation";
 import Projects from "./projects";
 import Background from "./Background";
 import Aboutt from "./about";
@@ -47,7 +46,7 @@ export default function Homepage() {
 
     return (
         <div>
-            <Background timeLine = {tl}></Background>
+            <Background timeLine = {tl} title="Hi There!"></Background>
             <Header timeLine={tl}></Header>
             <Projects className="detect" projectsArray={projectsArray}></Projects>
             <Aboutt></Aboutt>

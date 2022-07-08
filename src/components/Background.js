@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './Background.css'
-export default function Background({timeLine}) {
+export default function Background({timeLine, title}) {
 
     useEffect(() => {
 
@@ -37,7 +37,7 @@ export default function Background({timeLine}) {
             <div className='div2'></div>
             <div className='div3'></div>
             <div className='div4'></div>
-            <div className='div5'><h1 className='logo'>.HI THERE!</h1></div>
+            <div className='div5'><h1 className='logo'>{title}</h1></div>
             <div className='div6'></div>
             <div className='div7'></div>
             <div className='div8'></div>
