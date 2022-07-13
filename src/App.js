@@ -1,11 +1,6 @@
-import React, {useState, useEffect} from "react";
-import Homepage from "./components/homepage";
-import Navigation from "./components/navigation";
-import ProjectPage from "./components/ProjectPage";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
-import Contact from "./components/contact";
-import ErrorPage from "./components/errorPage";
-import {AnimatePresence} from 'framer-motion'
+import React, {useEffect, useState} from "react";
+import {HashRouter} from "react-router-dom";
+import RoutesPages from "./components/RoutesPages";
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -20,12 +15,6 @@ function App() {
   const [navigationScroll, setNavigationScroll] = useState(false);
 
   useEffect (() => {
-
-    window.addEventListener('scroll', () => {
-
-      window.scrollY > 0 ? setNavigationScroll(true) : setNavigationScroll(false)
-
-    })
 
     Aos.init({
 
@@ -45,27 +34,7 @@ function App() {
 
       <div className="App">
 
-        <div className="container">
-
-          <Navigation navScroll = {navigationScroll} timeLine={tl}></Navigation>
-
-          <AnimatePresence exitBeforeEnter={true}>
-
-            <Routes>
-
-              <Route path="/" element={<Homepage/>}/>
-
-              <Route path="/projects-page" element={<ProjectPage/>}/>
-              
-              <Route path="*" element={<ErrorPage/>}/>
-
-            </Routes>
-
-          </AnimatePresence>
-
-          <Contact></Contact>
-
-        </div>
+        <RoutesPages tl={tl} navigationScroll={navigationScroll} setNavigationScroll={setNavigationScroll}></RoutesPages>
 
       </div>
       

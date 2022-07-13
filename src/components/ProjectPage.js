@@ -110,6 +110,14 @@ export default function ProjectPage() {
         CodeLink: 'https://github.com/Hohenheimn/IPC',
         ImageName: 'ipc.png'
       },
+      {
+        id: 13,
+        title: 'Empowering Future',
+        Description: 'Project from Economist',
+        DemoLink: 'https://hohenheimn.github.io/empowering-future/',
+        CodeLink: 'https://github.com/Hohenheimn/empowering-future',
+        ImageName: 'empower.png'
+      },
   ]
   return (
     <div className='projects-container max'>
