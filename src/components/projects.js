@@ -6,7 +6,6 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 
 export default function Projects({projectsArray}) {
   
-
   return (
     <section className='projects' id="projects">
       
@@ -19,4 +18,5 @@ export default function Projects({projectsArray}) {
 
     </section>
   )
+  
 }

@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import './ProjectPage.css'
 import Card from './card'
-import AnimatePage from './AnimatePage'
 import Background from './Background'
 import {gsap} from 'gsap';
 
@@ -117,6 +116,14 @@ export default function ProjectPage() {
         DemoLink: 'https://hohenheimn.github.io/empowering-future/',
         CodeLink: 'https://github.com/Hohenheimn/empowering-future',
         ImageName: 'empower.png'
+      },
+      {
+        id: 14,
+        title: 'Cognizant',
+        Description: 'Project from Economist',
+        DemoLink: 'https://hohenheimn.github.io/cognizant/',
+        CodeLink: 'https://github.com/Hohenheimn/cognizant',
+        ImageName: 'cognizant.png'
       },
   ]
   return (
