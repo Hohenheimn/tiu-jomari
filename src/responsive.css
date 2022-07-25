@@ -19,14 +19,19 @@
 /* Ipad LandScape */
 @media screen and (max-width: 1080px){
     .card-container{flex-wrap: wrap;}
-    .card-container .card{width: 32%; margin-bottom: 20px;}
+    .card-container .card{width: 32%; margin-bottom: 20px; margin-right: 2%;}
+    .card-container .card:nth-child(4n){margin-right: 2%;}
+    .card-container .card:nth-child(3n){margin-right: 0;}
 }
 
 /* Ipad Mini Portrait */
 @media only screen and (max-width: 800px) {
     header .text-container{top: 45%; transform: translateY(-50%) translateX(-50%);}
     header .text-container h1{font-size: 32px;}
-    .card-container .card{width: 49%;}
+    .card-container .card{width: 49%; margin-right: 2%;}
+    .card-container .card:nth-child(4n){margin-right: 2%;}
+    .card-container .card:nth-child(3n){margin-right: 2%;}
+    .card-container .card:nth-child(2n){margin-right: 0;}
 }
 
 
@@ -47,7 +52,11 @@
 
     nav .max ul.active li{transform: translateY(0); opacity: 1;}
     .card-container{align-items: center; justify-content: center;}
-    .card-container .card{width: 80%;}
+    
+    .card-container .card{width: 80%; margin-right: 0;}
+    .card-container .card:nth-child(4n){margin-right: 0;}
+    .card-container .card:nth-child(3n){margin-right: 0;}
+    .card-container .card:nth-child(2n){margin-right: 0;}
 }
 
 @media only screen and (max-width: 480px) {
