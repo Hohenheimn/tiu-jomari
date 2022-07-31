@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/tiu-jomari/static/css/main.2c19cf1b.css",
-    "main.js": "/tiu-jomari/static/js/main.514c56ed.js",
+    "main.css": "/tiu-jomari/static/css/main.f9517a03.css",
+    "main.js": "/tiu-jomari/static/js/main.ea13e5b6.js",
     "static/js/787.30f366e6.chunk.js": "/tiu-jomari/static/js/787.30f366e6.chunk.js",
     "static/media/Raleway-Light.ttf": "/tiu-jomari/static/media/Raleway-Light.f25e9b3a1fc8e48e53f5.ttf",
     "static/media/Raleway-Regular.ttf": "/tiu-jomari/static/media/Raleway-Regular.9ade142e81dd8d55cd32.ttf",
     "static/media/Raleway-Bold.ttf": "/tiu-jomari/static/media/Raleway-Bold.d1a96e2aa6257c864d4d.ttf",
     "index.html": "/tiu-jomari/index.html",
-    "main.2c19cf1b.css.map": "/tiu-jomari/static/css/main.2c19cf1b.css.map",
-    "main.514c56ed.js.map": "/tiu-jomari/static/js/main.514c56ed.js.map",
+    "main.f9517a03.css.map": "/tiu-jomari/static/css/main.f9517a03.css.map",
+    "main.ea13e5b6.js.map": "/tiu-jomari/static/js/main.ea13e5b6.js.map",
     "787.30f366e6.chunk.js.map": "/tiu-jomari/static/js/787.30f366e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c19cf1b.css",
-    "static/js/main.514c56ed.js"
+    "static/css/main.f9517a03.css",
+    "static/js/main.ea13e5b6.js"
   ]
 }
