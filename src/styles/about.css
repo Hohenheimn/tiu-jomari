@@ -7,7 +7,7 @@ svg{z-index: 9; position: relative;}
 .boxes:nth-child(1){width: 40%; aspect-ratio: 2/1; z-index: 0; top: 0%; left: 0;}
 h1{font-size: clamp(24px, 3vw, 64px); position: relative; color: rgba(85, 85, 85, 0.56); text-transform: uppercase; font-weight: bold; z-index: 1;}
 .about{width: 100%; position: relative; display: flex; justify-content: center; z-index: 9;}
-.about article{width: 47%; display: flex; justify-content: center; flex-direction: column; align-items: center;}
+.about article{width: 100%; max-width: 800px; display: flex; justify-content: center; flex-direction: column; align-items: center;}
 .about article div{ padding: 40px; display: flex; flex-direction: column; align-items: center;}
 .about article h5{margin-bottom: 5px; color: #dd0000; font-size: 16px; letter-spacing: 5px; text-align: center;}
 .about article h2{display: inline-block; width: 100%; font-size: 64px; text-align: center; padding-bottom: 10px; margin-bottom: 20px; position: relative;}
@@ -18,15 +18,3 @@ h1{font-size: clamp(24px, 3vw, 64px); position: relative; color: rgba(85, 85, 85
 .about article div p{ width: 100%; color: #525253; text-align: center; margin: auto; font-family: 'Raleway-regular'; margin-bottom: 20px; line-height: 150%;}
 .about article a{display: inline-block; font-size: 14px; transition: .3s ease; padding: 10px 20px; margin-top: 20px; background-color: #dd0000; color: white; text-decoration: none; font-family: 'Raleway-bold';}
 .about article a:hover{background-color: #bc4141;}
-
-@media(max-width: 640px){
-    .about{flex-direction: column;}
-    .about article{width: 100%; order: 2;  margin-top: 20px;}
-    .about article div{width: 90%;}
-    .about article ul{display: flex; justify-content: space-between; flex-wrap: wrap;}
-    .about article ul li{width: 48%;}
-}
-@media(max-width: 420px){
-    .about article ul li{width: 100%;}
-    .about article div{padding: 20px; width: 100%;}
-}

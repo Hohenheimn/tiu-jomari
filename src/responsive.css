@@ -4,11 +4,20 @@
 @media screen and (max-width: 1599px) {	
 }
 @media screen and (max-width: 1440px) {
+
     nav .max aside h1{font-size: 24px;}
+
     nav .max ul li a{font-size: 12px;}
+
     header .text-container h1{font-size: 48px;}
-    header .text-container p{font-size: 24px;}
+
+    header .text-container p{font-size: 34px;}
+
     .card-container .card .content .title{font-size: 16px;}
+
+    header .text-container aside.imge{width: 45%;}
+
+    header .text-container div{width: 55%;}
 }
 @media screen and (max-width: 1366px) {
 }
@@ -19,14 +28,26 @@
 /* Ipad LandScape */
 @media screen and (max-width: 1080px){
     .card-container{flex-wrap: wrap;}
+
     .card-container .card{width: 32%; margin-bottom: 20px; margin-right: 2%;}
+    
     .card-container .card:nth-child(4n){margin-right: 2%;}
+
     .card-container .card:nth-child(3n){margin-right: 0;}
+
+    header .text-container div{width: 100%;}
+
+    header .text-container aside.imge{width: 60%;}
+
+    header .text-container{justify-content: flex-end;}
+
+    header .text-container h1{font-size: clamp(32px, 8vw, 74px);}
+    
+    header .text-container p{font-size: clamp(24px, 7vw, 54px);}
 }
 
 /* Ipad Mini Portrait */
 @media only screen and (max-width: 800px) {
-    header .text-container h1{font-size: 32px;}
     .card-container .card{width: 49%; margin-right: 2%;}
     .card-container .card:nth-child(4n){margin-right: 2%;}
     .card-container .card:nth-child(3n){margin-right: 2%;}
@@ -35,7 +56,6 @@
 
 
 @media only screen and (max-width: 640px) {
-    header .text-container h1{font-size: 34px;}
     header .text-container h3{font-size: 20px; line-height: 250%;}
     nav .max{position: static;}
     nav{ z-index: 9999;}
@@ -56,17 +76,17 @@
     .card-container .card:nth-child(4n){margin-right: 0;}
     .card-container .card:nth-child(3n){margin-right: 0;}
     .card-container .card:nth-child(2n){margin-right: 0;}
+
+    .about article h2{font-size: 32px;}
+
+    .about article div{padding: 20px;}
 }
 
 @media only screen and (max-width: 480px) {
-    header .text-container h1{font-size: 24px;}	
     header .text-container .dl-cv{padding: 10px 15px; font-size: 12px;}
     .card-container .card{width: 100%;}
-    header .text-container h1.desktop{display: none;}
-    header .text-container h1.mobile{display: inline;}
-    header .text-container h1.first{margin-bottom: 0;}
-    header .text-container h1.second{margin-top: 5px;}
-    header .text-container h1.second::after{animation-delay: 2.5s;}
+
+
 }
 
 
