@@ -1,5 +1,5 @@
 import React from 'react'
-import './contact.css'
+import '../styles/contact.css'
 import { FaFacebook, FaEnvelope, FaPhone, FaLinkedin } from 'react-icons/fa'
 
 
@@ -12,22 +12,23 @@ export default function Contact() {
 
           <section className='max anchor'>
 
-            <h1 data-aos="fade-right">Lets work together for your next projects</h1>
+            <h1>Lets work together for your next projects</h1>
 
             <ul>
-              <h3 data-aos="fade-right">{'<Contact/>'}</h3>
-              <li data-aos="fade-right"><a href="https://www.facebook.com/jomari.tiu/" target="_black"><FaFacebook/> Tiu Jmri</a></li>
-              <li data-aos="fade-right"><a href="jomtiu16@gmail.com" target="_black"><FaEnvelope/> jomtiu16@gmail.com</a></li>
-              <li data-aos="fade-right"><a target="_black"><FaPhone/> 09515532773</a></li>
-              <li data-aos="fade-right"><a href="https://linkedin.com/in/jomari-tiu-103b01214" target="_black"><FaLinkedin/> jomari-tiu</a></li>
+              <h3>{'<Contact/>'}</h3>
+              <li><a href="https://www.facebook.com/jomari.tiu/" target="_black"><FaFacebook/> Tiu Jmri</a></li>
+              <li><a href="jomtiu16@gmail.com" target="_black"><FaEnvelope/> jomtiu16@gmail.com</a></li>
+              <li><a target="_black"><FaPhone/> 09515532773</a></li>
+              <li><a href="https://linkedin.com/in/jomari-tiu-103b01214" target="_black"><FaLinkedin/> jomari-tiu</a></li>
             </ul>
 
             <aside>
-              <h3 data-aos="fade-right">Created Using:</h3>
-              <p data-aos="fade-right">React JS</p>
-              <p data-aos="fade-right">GSAP</p>
-              <p data-aos="fade-right">AOS animation</p>
-              <p data-aos="fade-right">CSS</p>
+              <h3>Created Using:</h3>
+              <p>React JS</p>
+              <p>-Framer Motion</p>
+              <p>-Context API</p>
+              <p>-AOS animation</p>
+              <p>CSS</p>
             </aside>
 
           </section>

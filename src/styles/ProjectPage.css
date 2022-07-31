@@ -1,4 +1,4 @@
-.projects-container{margin-top: clamp(50px, 3vw, 100px);}
+.projects-container{margin-top: clamp(50px, 3vw, 100px) !important;}
 .projects-container h5{ font-size: clamp(16px, 2vw, 24px); color: #dd0000;}
 .projects-container h1{ font-size: clamp(32px, 4vw, 64px); color: black; position: relative; padding-bottom: 10px; display: inline-block;}
 .projects-container h1::after{content: ''; position: absolute; bottom: 0; left: 0; width: 20%; height: 5px; background-color: #dd0000;}

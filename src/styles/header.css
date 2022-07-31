@@ -1,0 +1,84 @@
+header {
+    height: calc(100vh - 50px);
+    max-height: 1080px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  
+  header svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  header .text-container {
+    margin: auto;
+    z-index: 99;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1400px;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  header .text-container p {
+    font-family: "Raleway-light", sans-serif;
+    font-size: 55px;
+    color: #b1b3b7;
+    line-height: 120%;
+    position: relative;
+  }
+  header .text-container p span{position: absolute; bottom: 0; left: 0; height: 100%; width: 100%; background-color: white;}
+  header .text-container p.text2{
+    padding-bottom: 20px;
+  }
+  header .text-container p.text2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 5px;
+    width: 20%;
+    background-color: #dd0000;
+    position: relative;
+  } 
+  header .text-container div{z-index: 5; width: 50%;}
+
+  header .text-container aside.imge{ position: absolute; width: 45%; right: 0; background-color: white;}
+
+  header .text-container aside.imge .bg{position: absolute; z-index: 1; width: 100%; height: 100%; 
+    top: -50px; left: -50px; background-color: #f5f5f5;}
+
+  header .text-container aside.imge img{width: 100%; z-index: 2; position: relative;}
+  
+  header .text-container h1 { 
+      margin: 20px 0; 
+      font-size: 72px; 
+      font-family: "Raleway-bold", sans-serif; 
+      color: black;
+      position: relative;   
+  }
+
+  header .text-container .dl-cv{
+      display: inline-block; 
+      background-color: #dd0000; 
+      color: white; 
+      font-family: 'Raleway-bold'; 
+      text-decoration: none;
+      font-size: 16px;
+      padding: 15px 20px;
+      border-radius: 5px;
+      transition: .5s ease;
+      animation: cvAnimate 1s ease-in-out;
+  }
+  header .text-container .dl-cv:hover{
+      background-color: white;
+      color: #dd0000;
+      box-shadow: 8px 10px 8px 0 rgb(96, 96, 96);
+  }

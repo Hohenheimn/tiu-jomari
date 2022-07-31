@@ -1,12 +1,12 @@
 import React from 'react'
-import './card.css'
+import '../styles/card.css'
 
 export default function Card({projectsArray}) {
   return (
     <ul className='card-container'>
 
         {projectsArray.map((projectList) => (
-            <li className='card' key={projectList.id} data-aos="fade-left">
+            <li className='card' key={projectList.id}>
 
                 <img src={`/tiu-jomari/images/${projectList.ImageName}`} alt="" />
 

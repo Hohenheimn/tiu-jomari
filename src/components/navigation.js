@@ -1,23 +1,21 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState } from 'react'
 import {Link, useMatch, useResolvedPath} from 'react-router-dom'
-import {Link as Anchor} from 'react-scroll'
+import '../styles/navigation.css'
 
-import './navigation.css'
-
-export default function Navigation({navScroll, timeLine}) {
+export default function Navigation({navScroll}) {
 
     const [menu, setMenu] = useState(false)
 
-    useEffect(() => {
-        timeLine.fromTo('.menuList', .5, {translateX: '-20px', opacity: 0}, {translateX: '0', opacity: 1})
-    }, [])
 
     return (
         <nav className={navScroll ? 'activeScroll' : ''}>
+            
             <div className="max">
-                <aside>
+
+                <aside >
                     <h1>JOMARI</h1>
                 </aside>
+
                 <ul className={`menuList ${ menu ? 'active' : '' }`}>
                     <CustomLinks value="#Home" to="/" setMenu={setMenu} menu={menu}></CustomLinks>
                     <CustomLinks value="#Projects" to="/projects-page"  setMenu={setMenu} menu={menu}></CustomLinks>
@@ -28,6 +26,7 @@ export default function Navigation({navScroll, timeLine}) {
                 </div>
 
             </div>
+
         </nav>
     )
 }

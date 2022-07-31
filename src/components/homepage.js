@@ -1,54 +1,24 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
 import Header from "./header";
 import Projects from "./projects";
-import Background from "./Background";
 import Aboutt from "./about";
-import {gsap} from 'gsap';
+import { ProjectContext } from './ProjectProvider';
+import { motion } from 'framer-motion';
 
 export default function Homepage() {
 
-    var tl = gsap.timeline();
+    useEffect(() => {
+        window.scrollTo({ top: 0 })
+    }, [])
 
-    const projectsArray = [
-        {
-          id: 1,
-          title: 'Hong-Kong Looking Ahead',
-          Description: 'Project from THE ECONOMIST',
-          DemoLink: 'https://hohenheimn.github.io/HKISD/',
-          CodeLink: 'https://github.com/Hohenheimn/HKISD',
-          ImageName: 'hkisd.png'
-        },
-        {
-          id: 2,
-          title: 'Bounce',
-          Description: 'Project from THE ECONOMIST',
-          DemoLink: 'https://hohenheimn.github.io/Bounce/',
-          CodeLink: 'https://github.com/Hohenheimn/Bounce',
-          ImageName: 'bounce.png'
-        },
-        {
-          id: 3,
-          title: 'Google 4 Templates',
-          Description: 'Project from THE ECONOMIST',
-          DemoLink: ' https://hohenheimn.github.io/Four-Templates/',
-          CodeLink: 'https://github.com/Hohenheimn/Four-Templates',
-          ImageName: 'google4.png'
-        },
-        {
-          id: 4,
-          title: 'Initiative Website',
-          Description: 'Project from Magis Solution',
-          DemoLink: 'https://hohenheimn.github.io/Project-1-Initiative-Website/public/',
-          CodeLink: 'https://github.com/Hohenheimn/Project-1-Initiative-Website',
-          ImageName: 'initiativeWebiste.png'
-        },
-    ]
+    const {projectsArray} = useContext(ProjectContext)
+
+    const firstFourProjects = projectsArray.slice(0, 4)
 
     return (
         <div>
-            <Background timeLine = {tl} title="Hi There!"></Background>
-            <Header timeLine={tl}></Header>
-            <Projects className="detect" projectsArray={projectsArray}></Projects>
+            <Header></Header>
+            <Projects className="detect" projectsArray={firstFourProjects}></Projects>
             <Aboutt></Aboutt>
         </div>
     )

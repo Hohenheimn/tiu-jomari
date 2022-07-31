@@ -1,28 +1,28 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-const animations = {
+const fadeRight = {
     // From
-    initial: { opacity: 0, x: 100 },
+    initial: { opacity: 0, x: 50 },
     // To
     animate: { opacity: 1, x: 0 },
     // Exit 
-    exit: { opacity: 0, x: -100 },
+    exit: { opacity: 0, x: -50 },
 }
 
 function AnimatePage({children, thisKey}) {
   return (
     <motion.div
-        key={thisKey}
-        variants={animations}
-        initial="initial"
-        animate="animate"
-        exit ={{opacity: 0, x: -100}}
-        transition={{duration: 5}}
+      key={thisKey}
+      variants={fadeRight}
+      initial="initial"
+      animate="animate"
+      exit ="exit"
+      transition={{duration: .5}}
     >
-        {children}
+      {children}
     </motion.div>
   )
 }
 
-export default AnimatePage
+export default AnimatePage;

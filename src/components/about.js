@@ -1,5 +1,5 @@
 import React from 'react'
-import './about.css'
+import '../styles/about.css'
 import { FaArrowDown } from 'react-icons/fa'
 
 export default function Aboutt() {
@@ -10,33 +10,28 @@ export default function Aboutt() {
         <div className='max max-about anchor'>
             <section className='about'>
                 <article>
-                    <div data-aos="zoom-in">
+                    <div>
                         <h5>Discover</h5>
                         <h2>About Me</h2>
-                        <p data-aos="fade-up">
+                        <p>
                             Hi I am Jomari G. Tiu a Front-End Web Developer and Graduating Information in Technology from Cavite State University - Carmona, I live in GMA Cavite,
                             Im 24 yrs old.  My Hobbies are Playing basket ball, spending time with love one, playing mobile games and study more about front end.
                         </p>
                         <h3>Skills</h3>
                         <ul>
-                            <li data-aos="fade-left" data-aos-delay="200">Cascading Style Sheets</li>
-                            <li data-aos="fade-left" data-aos-delay="200">Javascript</li>
-                            <li data-aos="fade-left" data-aos-delay="200">HTML</li>
-                            <li data-aos="fade-left" data-aos-delay="200">Tailwind CSS</li>
-                            <li data-aos="fade-left" data-aos-delay="200">Ceros</li>
-                            <li data-aos="fade-left" data-aos-delay="200">Basic Knowledge Figma</li>
-                            <li data-aos="fade-left" data-aos-delay="200">Basic Knowledge React JS</li>
-                            <li data-aos="fade-left" data-aos-delay="200">PHP</li>
-                            <li data-aos="fade-left" data-aos-delay="200">My SQL</li>
+                            <li >Cascading Style Sheets</li>
+                            <li >Javascript</li>
+                            <li>HTML</li>
+                            <li >Tailwind CSS</li>
+                            <li>Ceros</li>
+                            <li>Basic Knowledge Figma</li>
+                            <li>Basic Knowledge React JS</li>
+                            <li>PHP</li>
+                            <li>My SQL</li>
                         </ul>
                         <a href="/tiu-jomari/cv/Tiu-Jomari.docx">Download CV <FaArrowDown /></a>
                     </div>
                 </article>
-                <aside>
-                    <div>
-                        <img src="/tiu-jomari/images/me-2.png" alt="" data-aos="zoom-in" />
-                    </div>
-                </aside>
             </section>
         </div>
     </div>

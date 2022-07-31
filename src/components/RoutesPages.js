@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import Homepage from "./homepage";
 import Navigation from "./navigation";
 import ProjectPage from "./ProjectPage";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation} from "react-router-dom";
 import Contact from "./contact";
 import ErrorPage from "./errorPage";
 import {AnimatePresence} from 'framer-motion'
@@ -10,6 +10,7 @@ import {AnimatePresence} from 'framer-motion'
 export default function RoutesPages({tl, setNavigationScroll, navigationScroll}) {
 
     useEffect(() => {
+        
         window.addEventListener('scroll', () => {
 
             window.scrollY > 0 ? setNavigationScroll(true) : setNavigationScroll(false)
@@ -17,25 +18,27 @@ export default function RoutesPages({tl, setNavigationScroll, navigationScroll})
         })
     })
 
+    const location = useLocation();
+
     return (
 
         <div className="container">
 
             <Navigation navScroll = {navigationScroll} timeLine={tl}></Navigation>
 
-                <AnimatePresence exitBeforeEnter={true}>
+            <AnimatePresence exitBeforeEnter={true}>
 
-                    <Routes>
+                <Routes location={location} key={location.pathname}>
 
-                        <Route path="/" element={<Homepage/>}/>
+                    <Route path="/" element={<Homepage/>}/>
 
-                        <Route path="/projects-page" element={<ProjectPage/>}/>
+                    <Route path="/projects-page" element={<ProjectPage/>}/>
                         
-                        <Route path="*" element={<ErrorPage/>}/>
+                    <Route path="*" element={<ErrorPage/>}/>
 
-                    </Routes>
+                </Routes>
 
-                </AnimatePresence>
+            </AnimatePresence>
 
             <Contact></Contact>
 
