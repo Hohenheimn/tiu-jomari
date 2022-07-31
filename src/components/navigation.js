@@ -1,8 +1,17 @@
 import React, { useState } from 'react'
 import {Link, useMatch, useResolvedPath} from 'react-router-dom'
 import '../styles/navigation.css'
+import { motion } from 'framer-motion'
 
 export default function Navigation({navScroll}) {
+
+    const FadeDown = {
+        from: { y: "-20px"},
+        to: { 
+            y: 0,
+            transition: {duration: .5, ease: 'easeInOut'}
+        }
+    }
 
     const [menu, setMenu] = useState(false)
 
@@ -12,9 +21,9 @@ export default function Navigation({navScroll}) {
             
             <div className="max">
 
-                <aside >
+                <motion.aside variants={FadeDown} initial="from" animate="to">
                     <h1>JOMARI</h1>
-                </aside>
+                </motion.aside>
 
                 <ul className={`menuList ${ menu ? 'active' : '' }`}>
                     <CustomLinks value="#Home" to="/" setMenu={setMenu} menu={menu}></CustomLinks>

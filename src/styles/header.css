@@ -34,8 +34,6 @@ header {
     position: relative;
   }
 
-  header .text-container p span{position: absolute; bottom: 0; left: 0; height: 100%; width: 100%; background-color: white;}
-
   header .text-container p.text2{ padding-bottom: 20px; }
 
   header .text-container p.text2::after{
@@ -65,6 +63,7 @@ header {
       font-size: 72px; 
       font-family: "Raleway-bold", sans-serif; 
       color: black;
+      text-transform: unset;
       position: relative;   
   }
 

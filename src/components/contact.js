@@ -27,6 +27,7 @@ export default function Contact() {
               <p>React JS</p>
               <p>-Framer Motion</p>
               <p>-Context API</p>
+              <p>-Router</p>
               <p>CSS</p>
             </aside>
 

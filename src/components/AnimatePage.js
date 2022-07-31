@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-const fadeRight = {
+const fadeleft = {
     // From
     initial: { opacity: 0, x: 50 },
     // To
@@ -9,20 +9,39 @@ const fadeRight = {
     // Exit 
     exit: { opacity: 0, x: -50 },
 }
-
-function AnimatePage({children, thisKey}) {
-  return (
-    <motion.div
-      key={thisKey}
-      variants={fadeRight}
-      initial="initial"
-      animate="animate"
-      exit ="exit"
-      transition={{duration: .5}}
-    >
-      {children}
-    </motion.div>
-  )
+export function FadeLeft({children}) {
+	return (
+		<motion.div
+			variants={fadeleft}
+			initial="initial"
+			animate="animate"
+			exit ="exit"
+			transition={{duration: .5}}
+		>
+			{children}
+		</motion.div>
+	)
 }
 
-export default AnimatePage;
+const topLeft = {
+	initial: {
+		marginTop: 0,
+		marginLeft: 0
+	},
+	animate: {
+		marginTop: '50px',
+		marginLeft: '50px'
+	},
+	exit: {
+		marginTop: '100px',
+		marginLeft: '100px',
+		opacity: 0
+	}
+}
+export const MoveTopleft = (children) => {
+	return(
+		<motion.div variants={topLeft} initial="initial" animate="animate" exit="exit">
+			{children}
+		</motion.div>
+	)
+}

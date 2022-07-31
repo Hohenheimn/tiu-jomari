@@ -22,12 +22,13 @@ export default function Aboutt() {
                             <li >Cascading Style Sheets</li>
                             <li >Javascript</li>
                             <li>HTML</li>
-                            <li >Tailwind CSS</li>
+                            <li>Tailwind CSS</li>
                             <li>Ceros</li>
                             <li>Basic Knowledge Figma</li>
                             <li>Basic Knowledge React JS</li>
                             <li>PHP</li>
                             <li>My SQL</li>
+                            <li>Wordpress</li>
                         </ul>
                         <a href="/tiu-jomari/cv/Tiu-Jomari.docx">Download CV <FaArrowDown /></a>
                     </div>
