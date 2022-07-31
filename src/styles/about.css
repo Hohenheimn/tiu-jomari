@@ -12,7 +12,7 @@ h1{font-size: clamp(24px, 3vw, 64px); position: relative; color: rgba(85, 85, 85
 .about article h5{margin-bottom: 5px; color: #dd0000; font-size: 16px; letter-spacing: 5px; text-align: center;}
 .about article h2{display: inline-block; width: 100%; font-size: 64px; text-align: center; padding-bottom: 10px; margin-bottom: 20px; position: relative;}
 .about article h2::after{content: ''; position: absolute; width: 100%; bottom: 0; left: 0; height: 2px; background-color: #dd0000;}
-.about article h3{font-size: clamp(18px, 2vw, 24px); align-self: flex-start; color: #dd0000; text-transform: uppercase; font-family: 'Raleway-bold'; font-weight: bold; margin-bottom: 10px;}
+.about article h3{font-size: clamp(18px, 2vw, 24px); align-self: flex-start; color: #dd0000; font-family: 'Raleway-bold'; font-weight: bold; margin-bottom: 10px;}
 .about article ul{list-style: none; display: flex; flex-wrap: wrap; justify-content: space-between;}
 .about article ul li{ width: 48%; font-family:'Raleway-regular'; color: #525253; font-size: 16px; margin-bottom: 10px;}
 .about article div p{ width: 100%; color: #525253; text-align: center; margin: auto; font-family: 'Raleway-regular'; margin-bottom: 20px; line-height: 150%;}

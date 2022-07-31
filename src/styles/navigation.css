@@ -19,6 +19,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     z-index: 999999;
+    background-color: white;
   }
   
   nav .max {
