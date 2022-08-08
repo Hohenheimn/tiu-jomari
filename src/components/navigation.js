@@ -28,6 +28,7 @@ export default function Navigation({navScroll}) {
                 <ul className={`menuList ${ menu ? 'active' : '' }`}>
                     <CustomLinks value="#Home" to="/" setMenu={setMenu} menu={menu}></CustomLinks>
                     <CustomLinks value="#Projects" to="/projects-page"  setMenu={setMenu} menu={menu}></CustomLinks>
+                    <CustomLinks value="#About" to="/about"  setMenu={setMenu} menu={menu}></CustomLinks>
                 </ul>
 
                 <div className={`menu ${ menu ? 'active' : '' }`} onClick={() => {setMenu(!menu)}}>

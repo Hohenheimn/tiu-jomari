@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {HashRouter} from "react-router-dom";
 import RoutesPages from "./components/RoutesPages";
 import { ProjectProvider } from "./components/ProjectProvider";
+import { SkillProvider } from "./components/SkillProvider";
 
 import 'aos/dist/aos.css'
 import './responsive.css'
@@ -15,15 +16,19 @@ function App() {
 
     <ProjectProvider>
       
-      <HashRouter>
+      <SkillProvider>
 
-      <div className="App">
+        <HashRouter>
 
-        <RoutesPages navigationScroll={navigationScroll} setNavigationScroll={setNavigationScroll}></RoutesPages>
+          <div className="App">
 
-      </div>
+            <RoutesPages navigationScroll={navigationScroll} setNavigationScroll={setNavigationScroll}></RoutesPages>
 
-      </HashRouter>
+          </div>
+
+        </HashRouter>
+
+      </SkillProvider>
 
     </ProjectProvider>
 

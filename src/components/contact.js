@@ -28,6 +28,7 @@ export default function Contact() {
               <p>-Framer Motion</p>
               <p>-Context API</p>
               <p>-Router</p>
+              <p>Ongoing Animation</p>
               <p>CSS</p>
             </aside>
 

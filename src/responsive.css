@@ -44,6 +44,10 @@
     header .text-container h1{font-size: clamp(32px, 8vw, 74px);}
     
     header .text-container p{font-size: clamp(24px, 7vw, 54px);}
+
+    .about-containers article .exp li{width: 50%;}
+
+    .about-containers .card-box-container div aside{padding: 40px;}
 }
 
 /* Ipad Mini Portrait */
@@ -80,11 +84,21 @@
     .about article h2{font-size: 32px;}
 
     .about article div{padding: 20px;}
+
+    .about-containers article .layout-container .img-container{width: 70%; margin: auto; margin-top: 50px;}
+    .about-containers article .layout-container .text-container{width: 100%;}
+    .about-containers .card-box-container div{width: 33.3%;}
 }
 
 @media only screen and (max-width: 480px) {
     header .text-container .dl-cv{padding: 10px 15px; font-size: 12px;}
     .card-container .card{width: 100%;}
+
+    .about-containers .card-box-container div{width: 50%;}
+
+    .about-containers article .exp li{width: 100%; margin: 0; margin-bottom: 20px;}
+
+    .about-containers article .exp{flex-wrap: wrap;}
 
 
 }

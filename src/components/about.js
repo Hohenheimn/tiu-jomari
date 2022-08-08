@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/about.css'
 import { FaArrowDown } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 export default function Aboutt() {
   return (
@@ -10,6 +11,7 @@ export default function Aboutt() {
         <div className='max max-about anchor'>
             <section className='about'>
                 <article>
+                   
                     <div>
                         <h5>Discover</h5>
                         <h2>About Me</h2>
@@ -31,6 +33,7 @@ export default function Aboutt() {
                             <li>Wordpress</li>
                         </ul>
                         <a href="/tiu-jomari/cv/Tiu-Jomari.docx">Download CV <FaArrowDown /></a>
+                        <Link to="/about">Know More</Link>
                     </div>
                 </article>
             </section>

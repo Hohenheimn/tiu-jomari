@@ -6,6 +6,7 @@ import { Route, Routes, useLocation} from "react-router-dom";
 import Contact from "./contact";
 import ErrorPage from "./errorPage";
 import {AnimatePresence} from 'framer-motion'
+import Aboutmore from "./aboutmore";
 
 export default function RoutesPages({tl, setNavigationScroll, navigationScroll}) {
 
@@ -33,6 +34,8 @@ export default function RoutesPages({tl, setNavigationScroll, navigationScroll})
                     <Route path="/" element={<Homepage/>}/>
 
                     <Route path="/projects-page" element={<ProjectPage/>}/>
+
+                    <Route path="/about" element={<Aboutmore/>} />
                         
                     <Route path="*" element={<ErrorPage/>}/>
 
