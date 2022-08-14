@@ -112,7 +112,7 @@ const LoadingScreen = () => {
     }
   }
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter={true}>
       <div className={styles.loadingScreen}>
         <div className={styles.logo}>
           <motion.h1 variants={StaggerContainer} initial="from" animate="to" exit="exit"><motion.div variants={color}>J</motion.div>
