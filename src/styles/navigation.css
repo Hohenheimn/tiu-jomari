@@ -20,7 +20,10 @@
             justify-content: center;
     z-index: 999999;
     background-color: white;
+    transition: .5s ease-in;
   }
+
+  nav.blackThis {background-color: black;}
   
   nav .max {
     display: -webkit-box;
@@ -189,3 +192,23 @@
   }
 
   nav.activeScroll{background-color: white; box-shadow: 0 0 15px rgb(177, 177, 177); z-index: 999;}
+
+
+  nav.blackThis {background-color: black;}
+  nav.blackThis .max aside h1 {color: white;}
+  nav.blackThis .max ul li{border-left: 1px solid white;}
+  nav.blackThis .max ul li a{color: white;}
+
+  nav.blackThis .max ul li a:hover {
+    -webkit-box-shadow: inset 120px 0px 0px 0px white;
+            box-shadow: inset 120px 0px 0px 0px white;
+    color: black;
+    font-family: "Raleway-bold", sans-serif;
+  }
+  
+  nav.blackThis .max ul li a.active {
+    -webkit-box-shadow: inset 120px 0px 0px 0px white;
+            box-shadow: inset 120px 0px 0px 0px white;
+    color: black;
+    font-family: "Raleway-bold", sans-serif;
+  }

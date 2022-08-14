@@ -65,7 +65,7 @@ export default function Header() {
                     variants={moveleftTop}
                     initial="from" animate="to" exit="exit"  transition={{duration: .5, delay: .5, ease: 'easeInOut'}}
                     className='bg'></motion.div>
-                    <img src="/tiu-jomari/images/me-2.png" alt="" />
+                    <img src="/tiu-jomari/images/me.png" alt="" />
                 </motion.aside>
 
             </div>

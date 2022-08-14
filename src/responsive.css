@@ -45,9 +45,9 @@
     
     header .text-container p{font-size: clamp(24px, 7vw, 54px);}
 
-    .about-containers article .exp li{width: 50%;}
+    .aboutmore_aboutContainers__hpfG0 article .aboutmore_exp__wXxWI li{width: 50%;}
 
-    .about-containers .card-box-container div aside{padding: 40px;}
+    .aboutmore_aboutContainers__hpfG0 .aboutmore_cardBoxContainer__GScZC div aside{padding: 40px;}
 }
 
 /* Ipad Mini Portrait */
@@ -64,6 +64,7 @@
     nav .max{position: static;}
     nav{ z-index: 9999;}
     nav .max ul{ position: fixed; transition: .3s ease-in-out; top: 0; height: 0; overflow: hidden; transform-origin: top center; width: 100%; right: 0; background-color: white; justify-content: center; align-items: center; flex-direction: column;}
+    nav.blackThis .max ul {background-color: black;}
     nav .max ul.active{height: 100vh;}
     nav .max ul li{border: none; margin: 0; margin-bottom: 20px;}
     nav .max .menu{display: block;}
@@ -72,6 +73,8 @@
     nav .max ul li:nth-child(2){transition-delay: .6s;}
     nav .max ul li:nth-child(3){transition-delay: .9s;}
     nav .max ul li:nth-child(4){transition-delay: 1.2s;}
+
+    nav.blackThis .max ul li{border: 0;}
 
     nav .max ul.active li{transform: translateY(0); opacity: 1;}
     .card-container{align-items: center; justify-content: center;}
@@ -85,20 +88,24 @@
 
     .about article div{padding: 20px;}
 
-    .about-containers article .layout-container .img-container{width: 70%; margin: auto; margin-top: 50px;}
-    .about-containers article .layout-container .text-container{width: 100%;}
-    .about-containers .card-box-container div{width: 33.3%;}
+    .aboutmore_aboutContainers__hpfG0 article .aboutmore_layoutContainer__2kfmm.aboutmore_left__6t5x4 .aboutmore_imgContainer__Oqn\+g{width: 70%; margin: auto; margin-top: 0; margin-bottom: 40px;}
+
+    .aboutmore_aboutContainers__hpfG0 .aboutmore_bannerHead__CFrW2 .aboutmore_layoutContainer__2kfmm .aboutmore_imgContainer__Oqn\+g{width: 70%; margin: auto; margin-top: 0;}
+    .aboutmore_aboutContainers__hpfG0 .aboutmore_bannerHead__CFrW2 .aboutmore_layoutContainer__2kfmm .aboutmore_textContainer__yUQRL{width: 100%;}
+    .aboutmore_aboutContainers__hpfG0 .aboutmore_cardBoxContainer__GScZC div{width: 33.3%;}
+
+    .aboutmore_aboutContainers__hpfG0 .aboutmore_bannerHead__CFrW2 .aboutmore_layoutContainer__2kfmm .aboutmore_textContainer__yUQRL{padding:  0;}
 }
 
 @media only screen and (max-width: 480px) {
     header .text-container .dl-cv{padding: 10px 15px; font-size: 12px;}
     .card-container .card{width: 100%;}
 
-    .about-containers .card-box-container div{width: 50%;}
+    .aboutmore_aboutContainers__hpfG0 .aboutmore_cardBoxContainer__GScZC div{width: 50%;}
 
-    .about-containers article .exp li{width: 100%; margin: 0; margin-bottom: 20px;}
+    .aboutmore_aboutContainers__hpfG0 article .aboutmore_exp__wXxWI li{width: 100%; margin: 0; margin-bottom: 20px;}
 
-    .about-containers article .exp{flex-wrap: wrap;}
+    .aboutmore_aboutContainers__hpfG0 article .aboutmore_exp__wXxWI{flex-wrap: wrap;}
 
 
 }

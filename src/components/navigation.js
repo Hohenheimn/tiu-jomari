@@ -5,6 +5,10 @@ import { motion } from 'framer-motion'
 
 export default function Navigation({navScroll}) {
 
+    const resolvePath = useResolvedPath('/about')
+    const blackCondition = useMatch({ path: resolvePath.pathname, end: true })
+
+
     const FadeDown = {
         from: { y: "-20px"},
         to: { 
@@ -17,7 +21,7 @@ export default function Navigation({navScroll}) {
 
 
     return (
-        <nav className={navScroll ? 'activeScroll' : ''}>
+        <nav className={`${navScroll ? 'activeScroll' : ''} ${blackCondition ? 'blackThis' : ''}`}>
             
             <div className="max">
 
@@ -45,6 +49,7 @@ function CustomLinks({to, value, setMenu, menu}){
 
     const resolvePath = useResolvedPath(to)
     const isActive = useMatch({ path: resolvePath.pathname, end: true })
+
 
     return(
         <li className='menuItem'>

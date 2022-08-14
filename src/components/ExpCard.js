@@ -34,8 +34,6 @@ export default function ExpCard({description, img, title}) {
     return (
         <li onClick={() => (setValidate(!isValidate))}>
             <img src={img} alt="" />
-            {/* <h4>{title}</h4>
-            <p>{description}</p> */}
             <AnimatePresence>
                 {isValidate && (
                     <motion.div variants={staggerContainer} initial="from" animate="to" exit="exit">
