@@ -6,6 +6,14 @@ export const ProjectProvider = ({children}) => {
 
     const projectsArray = [
 		{
+			id: 0,
+			title: 'Anime Binge',
+			Description: 'Simple React Project',
+			DemoLink: 'https://hohenheimn.github.io/AnimeBinge/',
+			CodeLink: 'https://github.com/Hohenheimn/AnimeBinge',
+			ImageName: 'AnimeBinge.png'
+		},
+		{
 			id: 1,
 			title: 'Hong-Kong Looking Ahead',
 			Description: 'Project from THE ECONOMIST',

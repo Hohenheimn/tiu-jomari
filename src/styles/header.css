@@ -32,6 +32,7 @@ header {
     color: #b1b3b7;
     line-height: 120%;
     position: relative;
+    /* background-color: rgba(0, 0, 0, 0.351); */
   }
 
   header .text-container p.text2{ padding-bottom: 20px; }
